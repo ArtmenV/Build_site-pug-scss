@@ -116,13 +116,41 @@ section,
   }
 }
 
-.design__head-class {
+.grid {
   display: grid;
   grid-template-areas:
     "a a a a a a b b b"
     "c c c c d d d d d"
     "c c c c e e e e e"
     "f f f g g g g g g";
+}
+
+.grid-item-bg {
+  grid-area: a;
+}
+
+.grid-item-gray {
+  grid-area: b;
+}
+
+.grid-item-blue {
+  grid-area: c;
+}
+
+.grid-item-beige {
+  grid-area: d;
+}
+
+.grid-item-black {
+  grid-area: e;
+}
+
+.grid-item-human {
+  grid-area: f;
+}
+
+.grid-item-green {
+  grid-area: g;
 }
 
 h2 {
@@ -223,6 +251,7 @@ a {
   background-color: #f3f3f3;
 }
 .grid-item-blue {
+  background-color: rgba(84, 255, 238, 0.9);
   background-image: url("../img/photo_section_3.jpg");
 }
 
