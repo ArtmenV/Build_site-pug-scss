@@ -147,6 +147,7 @@ h4 {
 
 .span {
   display: block;
+  margin: 1em 0px;
 }
 
 p {
@@ -248,6 +249,10 @@ a {
 .grid-item-human {
   background-image: url("../img/photo_section_6.jpg");
   grid-area: f;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  flex-wrap: wrap;
 }
 
 .grid-item-green {
@@ -301,14 +306,20 @@ button {
   margin-bottom: 64px;
 }
 
+.design_logo-footer {
+  margin-top: 10em;
+}
+
 .logo {
-  margin-bottom: 25px;
+  // margin: 3em;
   display: block;
   width: 90px;
   height: 90px;
-  background: url("../img/logo.png");
+  left: 0px;
   background-size: cover;
   background-repeat: no-repeat;
+  border: none;
+  margin-bottom: 1em;
 }
 
 .list {
