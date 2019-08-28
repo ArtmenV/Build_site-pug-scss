@@ -118,6 +118,11 @@ section,
 
 .design__head-class {
   display: grid;
+  grid-template-areas:
+    "a a a a a a b b b"
+    "c c c c d d d d d"
+    "c c c c e e e e e"
+    "f f f g g g g g g";
 }
 
 h2 {
@@ -157,8 +162,9 @@ a {
   border-radius: 10px;
   padding: 15px 0;
   display: block;
-  max-width: 211px;
+  max-width: 210px;
   text-align: center;
+  margin-top: 50px;
 }
 
 .grid-item-beige a {
@@ -206,7 +212,7 @@ a {
 
 .form textarea {
   width: 100%;
-  min-height: 300px;
+  min-height: 124px;
 }
 
 .grid-item-bg {
@@ -247,11 +253,28 @@ a {
   background-repeat: no-repeat;
 }
 
+.grid-item-gray,
+.grid-item-blue,
+.grid-item-beige,
+.grid-item-black,
+.grid-item-green,
+.grid-item-human {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 55px 70px 55px;
+}
+
 .grid-item-blue,
 .grid-item-black,
 .grid-item-green,
 .grid-item-human {
   color: #fff;
+}
+
+.grid-item-blue > div {
+  color: #fff;
+  margin-bottom: 70px;
 }
 
 button {
@@ -266,6 +289,7 @@ button {
 }
 
 .logo {
+  margin-bottom: 25px;
   display: block;
   width: 90px;
   height: 90px;
