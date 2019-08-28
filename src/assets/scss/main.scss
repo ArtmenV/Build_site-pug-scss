@@ -134,6 +134,7 @@ h2,
 h3,
 h4 {
   font-weight: 200;
+  letter-spacing: 1px;
   span {
     font-weight: 900;
   }
@@ -154,8 +155,58 @@ a {
   text-decoration: none;
   border: 1px solid #fff;
   border-radius: 10px;
-  padding: 10px 15px;
+  padding: 15px 0;
   display: block;
+  max-width: 211px;
+  text-align: center;
+}
+
+.grid-item-beige a {
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #000;
+}
+
+.form {
+  max-width: 620px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form input::-webkit-input-placeholder,
+.form textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+.form input::-moz-placeholder,
+.form textarea::-moz-placeholder {
+  color: #fffb;
+}
+.form input:-moz-placeholder,
+.form textarea:-moz-placeholder {
+  color: #fffb;
+}
+.form input:-ms-placeholder,
+.form textarea:-ms-placeholder {
+  color: #fffb;
+}
+
+.form input,
+.form textarea {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 7px;
+  margin-bottom: 12px;
+  padding: 18px 15px;
+}
+
+.form input {
+  width: calc(48%-30px);
+}
+
+.form textarea {
+  width: 100%;
+  min-height: 300px;
 }
 
 .grid-item-bg {
@@ -201,6 +252,59 @@ a {
 .grid-item-green,
 .grid-item-human {
   color: #fff;
+}
+
+button {
+  display: block;
+  background-image: url("../img/menu_button.png");
+  width: 33px;
+  height: 33px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 64px;
+}
+
+.logo {
+  display: block;
+  width: 90px;
+  height: 90px;
+  background: url("../img/logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.list > li > a {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 45px;
+  display: block;
+  border: none;
+}
+
+.list > li {
+  margin-right: 10px;
+}
+
+.list-fb {
+  background-image: url("../img/facebook.png");
+  background-size: cover;
+}
+
+.list > li > a.list-dr {
+  background-image: url("../img/globe.png");
+}
+
+.list > li > a.list-tw {
+  background-image: url("../img/twitter.png");
 }
 
 // Modules
