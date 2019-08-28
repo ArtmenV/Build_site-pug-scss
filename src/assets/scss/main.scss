@@ -253,11 +253,15 @@ a {
   flex-direction: column;
   align-content: space-around;
   flex-wrap: wrap;
+  min-height: 620px;
 }
 
 .grid-item-green {
   background-image: url("../img/photo_section_last.jpg");
   grid-area: g;
+  flex-direction: column;
+  align-content: space-around;
+  flex-wrap: wrap;
 }
 
 .grid-item-bg,
@@ -327,33 +331,27 @@ button {
   display: flex;
   justify-content: flex-start;
   padding: 0;
+  & > li {
+    margin-right: 10px;
+    & > a {
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 45px;
+      height: 45px;
+      display: block;
+      border: none;
+      margin-top: 7em;
+      margin-bottom: 2em;
+    }
+    & > a.list-fb {
+      background-image: url("../img/facebook.png");
+      background-size: cover;
+    }
+    & > a.list-dr {
+      background-image: url("../img/globe.png");
+    }
+    & > a.list-tw {
+      background-image: url("../img/twitter.png");
+    }
+  }
 }
-
-.list > li > a {
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 45px;
-  height: 45px;
-  display: block;
-  border: none;
-}
-
-.list > li {
-  margin-right: 10px;
-}
-
-.list-fb {
-  background-image: url("../img/facebook.png");
-  background-size: cover;
-}
-
-.list > li > a.list-dr {
-  background-image: url("../img/globe.png");
-}
-
-.list > li > a.list-tw {
-  background-image: url("../img/twitter.png");
-}
-
-// Modules
-// @import "modules/my-module.scss";
