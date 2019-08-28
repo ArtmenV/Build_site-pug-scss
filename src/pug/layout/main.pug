@@ -1,0 +1,32 @@
+include ../utils/mixins
+block variables
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title #{title}
+    meta(name="description", content=description)
+    block head
+
+  body(class=pageClass)
+    .design__head-class
+      section.design_main__block
+          img(src="../../../assets/img/photo_main.jpg").img-head
+      section.design__menu-items
+        button(type='button')
+        h2 All sayed 
+          span Web Designing
+        h2 Project
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur modi, officia quibusdam voluptates amet quaerat recusandae asperiores mollitia. Rerum omnis sint eum voluptates odio. Error in totam repudiandae recusandae nemo.
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur modi, officia quibusdam voluptates amet quaerat recusandae asperiores mollitia. Rerum omnis sint eum voluptates odio. Error in totam repudiandae recusandae nemo.
+        
+
+
+
+        include ../includes/modules/header
+        
+        
+        include ../includes/modules/footer
+
+    block script
